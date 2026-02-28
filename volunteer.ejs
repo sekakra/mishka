@@ -1,0 +1,10 @@
+
+<%- include('layout') %>
+<section>
+  <h2>Donate</h2>
+  <form method="POST" action="/donate">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="number" name="amount" placeholder="Donation Amount" required><br>
+    <button class="btn">Donate</button>
+  </form>
+</section>
