@@ -1,11 +1,70 @@
 
-<%- include('layout') %>
-<section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hope Foundation</title>
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Hope Foundation</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <h2>Together We Make a Difference</h2>
+  <p>Supporting education, food security and healthcare for vulnerable families.</p>
+  <a href="#donate" class="btn">Donate Now</a>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>We are a professional humanitarian NGO focused on sustainable community development.</p>
+</section>
+
+<section id="projects" class="section bg-light">
+  <h2>Our Projects</h2>
+  <div class="cards">
+    <div class="card">Education Support Program</div>
+    <div class="card">Food Distribution Campaign</div>
+    <div class="card">Medical Assistance Initiative</div>
+  </div>
+</section>
+
+<section id="donate" class="section">
+  <h2>Donate</h2>
+  <form method="POST" action="/donate">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="number" name="amount" placeholder="Donation Amount" required>
+    <button class="btn">Donate</button>
+  </form>
+</section>
+
+<section id="contact" class="section bg-light">
   <h2>Contact Us</h2>
   <form method="POST" action="/contact">
-    <input type="text" name="name" placeholder="Your Name" required><br>
-    <input type="email" name="email" placeholder="Your Email" required><br>
-    <textarea name="message" placeholder="Your Message" required></textarea><br>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button class="btn">Send Message</button>
   </form>
 </section>
+
+<footer>
+  <p>© 2026 Hope Foundation. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
